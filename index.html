@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+    </header>
+    <main>
+
+        <h2 class="text-center text-4xl py-8 mb-8">All flowers </h2>
+        <section>
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+               
+                    <div class="  text-center py-8 px-8">
+                        <figure><img class="w-40" src="./img/pngwing 6.png" alt="Shoes" /></figure>
+                       
+                          <h2 id="box-header" class="text-2xl py-3">snow white!</h2>
+                          <p>If a dog chews shoes whose shoes does he </p>
+                           <h3>prices: $ <span>50 </span></h3>
+                            <button onclick="handleClickBtn(this)" class="btn btn-primary">add to card</button>
+                    
+                      </div>
+                      <div class="  text-center py-8 px-8">
+                        <figure><img class="w-40" src="./img/pngwing 8.png" alt="Shoes" /></figure>
+                       
+                          <h2 id="box-text" class="text-2xl py-3">snow black!</h2>
+                          <p>If a dog chews shoes whose shoes does he </p>
+                           <h3>prices: $ <span>10</span></h3>
+                            <button onclick="handleClickBtn(this)"class="btn btn-primary">add to card</button>
+                    
+                      </div>
+                      <div class="  text-center py-8 px-8">
+                        <figure><img class="w-40" src="./img/pngwing 7.png" alt="Shoes" /></figure>
+                       
+                          <h2 id="green" class="text-2xl py-3">snow green!</h2>
+                          <p>If a dog chews shoes whose shoes does he </p>
+                           <h3>prices: $ <span id="text-3" >100</span></h3>
+                            <button onclick="handleClickBtn(this)" class=" btn btn-primary">add to card</button>
+                    
+                      </div>
+                      <div  id="">
+                        <div class="py-9">
+                            <h2 class="text-2xl py-3 font-semibold capitalize">code: here</h2>
+                            <div id="celected" ></div>
+                            <h2 id="total" >: 00</h2>
+                            <h3>discount:00</h3>
+                            <hr>
+                            <h3 class="text-base py-3">grand:total</h3>
+                      </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/concep.js"></script>
+</body>
+</html>
